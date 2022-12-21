@@ -62,6 +62,27 @@ public class Test {
 						+ "CdkcQ399fzvkpSTrfIdjddjBGnR3bUDphOtc/3tU84qVbGxxxYM1iI+KTJ9ArCAm\n"
 						+ "hb5NhZW+hpNrUtuwIJ0hJ9Q5kjig986ec8d1nucUmVJ31BEQUmStJKwGxF2XKg==\n"
 						+ "-----END RSA PRIVATE KEY-----\n";
-		log.info("Some test message: {}", "1234", keyValue("partnerId", 1234), keyValue("anotherId", "33553"), keyValue("secret", testSecret));
+		String testRegex = "iamapassword";
+		String testAnotherSecret = "%6sWsdD3uQzKOg2#0g$*0UbcCVaM@KcBpULP-=$68vEp2KndHDyD4nA!W1";
+		String testPublicKey =
+				"-----BEGIN PUBLIC KEY-----\n"
+						+ "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA3DD8aaRac56hFyGcvPUX\n"
+						+ "DO4L/AbwVzDGakJlmJd0eBlqdrShhCkwljRCwExSrl4JIgD39oMtP6gvkXl2wCE0\n"
+						+ "EFgaowkiOxiz2KXvXpEmChiFChyFRw8N2cWEN10tO/TWWM31EcXtEQDdLXBfMzAa\n"
+						+ "cRwKZMdwsM+CFCsIoDcr7dnVp/O3NigXmrFdfMD9TFfEKPOMdwgyilEgfSgE03G1\n"
+						+ "cfIDIQ1oc+QSeerQQg6G+eUMad8hecDPfEYa0oVeyxZJAxh1ekQerg4mDmT6/WMS\n"
+						+ "r+zEJr35gDwPcmX+Ts03WbYcLeu+/1uFt7g3eL8cKSJShX9tkhwEmxQK6YG4f9WQ\n"
+						+ "ZUmGQBWDJxzIzflPp9MBl1UEq1PACqpOcB0xBjdpikpTrd9wrTL7HOz0YeLwGrAd\n"
+						+ "3xJq25Qdbe4vxf8ww56Q5jqDXczFkEH4f+7qiN7t8EyuTgkSS9DOY+joT1QXc53A\n"
+						+ "ZBYhQfD5fsShJHmKaoM9wEXt+h4DZUkhk8KSdAZFXtzDLvrhInLuZo4HulDwxvBm\n"
+						+ "lKWUePAm9Jc5BH4b/UzeP3uv9rLDbrwNWqLfgj7zTDEVZwBo6Rdn8B5yuFCwSl6w\n"
+						+ "rkZzEgarb3cFfH+ZO0c+m5+Ih8MS1f5+cPMAKlO3/vOYNcVdhZsZ8GiNLpP2ndK7\n"
+						+ "Ju4WJV606sXVLb7GVh3FWWsCAwEAAQ==\n"
+						+ "-----END PUBLIC KEY-----\n";
+		log.info("Some test message: {}", "1234",
+				keyValue("partnerId", 1234),
+				keyValue("anotherId", "33553"),
+				keyValue("secret", testSecret),
+				keyValue("regex", testRegex));
 	}
 }
